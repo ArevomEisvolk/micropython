@@ -68,7 +68,7 @@ string(CONCAT GIT_SUBMODULES "${GIT_SUBMODULES} " lib/tinyusb)
 include(${MICROPY_DIR}/py/py.cmake)
 include(${MICROPY_DIR}/extmod/extmod.cmake)
 include(${PICO_SDK_PATH}/pico_sdk_init.cmake)
-include(pico_extras_import.cmake)
+include(${MICROPY_DIR}/ports/rp2/pico_extras_import.cmake)
 
 # Define the top-level project
 project(${MICROPY_TARGET})
